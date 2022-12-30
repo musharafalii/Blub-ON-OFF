@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--  Musharaf Ali -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blub ON/OFF </title>
+</head>
+<style>
+    .blub {
+        text-align: center;
+    }
+</style>
+
+<body>
+    <div class="blub">
+        <h2>Blub On/Off in Javascript</h2>
+        <p>Javascript change the value of the src(Source) attribute</p>
+        <button onclick="on()"> Turn on The Light</button>
+        <img src="off.gif" id="image" alt="">
+
+        <button onclick="off()">Turn Off the Light</button>
+    </div>
+
+    
+    <script>
+        function on() {
+            document.getElementById("image").src = "on.gif"
+        }
+
+        function off() {
+            document.getElementById("image").src = "off.gif"
+        }
+
+    </script>
+</body>
+
+</html>
